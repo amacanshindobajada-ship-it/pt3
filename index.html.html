@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shindo Bajada Amacan – Software Engineer Intern</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={darkMode:'media',theme:{extend:{fontFamily:{display:['Syne','system-ui','sans-serif'],sans:['"DM Sans"','system-ui','sans-serif']},colors:{bg:'var(--bg)',ink:'var(--ink)',muted:'var(--muted)',line:'var(--line)',accent:'var(--accent)',pink:'var(--pink)',glow:'var(--glow)',surface:'var(--surface)',onaccent:'var(--on)'}}}}
+</script>
+<style>
+:root{color-scheme:dark;--bg:#0e0e10;--surface:#1a1815cc;--ink:#f2ede4;--muted:#a59f93;--line:#312d27;--accent:#dcb572;--pink:#e5906e;--glow:#4a3720;--on:#15110b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:#0e0e10;--surface:#1a1815cc;--ink:#f2ede4;--muted:#a59f93;--line:#312d27;--accent:#dcb572;--pink:#e5906e;--glow:#4a3720;--on:#15110b}}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);overflow-x:hidden}
+.blob{position:fixed;border-radius:9999px;filter:blur(90px);pointer-events:none;z-index:-1}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<style type="text/tailwindcss">
+@layer components{
+.glass{@apply bg-surface border border-line rounded-3xl backdrop-blur-md}
+.chip{@apply inline-block px-3 py-1 rounded-full text-sm font-medium bg-glow text-ink}
+.t1 .chip{@apply bg-accent text-onaccent}
+.t3 .chip{@apply bg-transparent border-[1.5px] border-dashed border-pink}
+.btn{@apply inline-block px-6 py-3 rounded-full border-[1.5px] border-accent font-bold text-sm no-underline transition-transform hover:-translate-y-0.5 text-accent}
+.btn-p{@apply bg-accent text-onaccent}
+.tier{@apply mt-4}
+.tier small{@apply block text-[13px] text-muted mb-1.5}
+.chips{@apply flex flex-wrap gap-1.5}
+.dt{@apply font-display font-bold text-[15px] text-accent pt-0.5}
+.panel h3{@apply font-display text-2xl mb-3 mt-0}
+.panel h4{@apply font-display text-base text-accent mt-5 mb-1}
+.panel code{@apply bg-glow px-2 py-0.5 rounded-md text-sm}
+.tabbtn{@apply font-medium text-[15px] bg-surface text-muted border border-line rounded-full px-5 py-2 cursor-pointer}
+.tabbtn[aria-selected="true"]{@apply bg-accent text-onaccent border-accent}
+.field{@apply block w-full mt-1.5 text-ink bg-bg border border-line rounded-2xl px-3.5 py-3}
+}
+</style>
+</head>
+<body class="font-sans text-[17px] leading-relaxed text-ink">
+<div class="blob w-[420px] h-[420px] bg-glow opacity-70 -top-28 -right-24"></div>
+<div class="blob w-[340px] h-[340px] bg-pink opacity-20 -bottom-28 -left-24"></div>
+
+<header class="sticky top-0 z-10 bg-surface backdrop-blur-lg border-b border-line" style="padding-top:env(safe-area-inset-top,0px)">
+<div class="max-w-5xl mx-auto px-6 py-3.5 flex flex-wrap items-center justify-between gap-4">
+<a href="#top" class="font-display font-extrabold text-xl text-ink no-underline">Shindo Amacan</a>
+<nav aria-label="Sections" class="flex flex-wrap gap-5 text-[15px] font-medium">
+<a class="text-muted hover:text-accent no-underline" href="#skills">Skills</a>
+<a class="text-muted hover:text-accent no-underline" href="#work">Projects</a>
+<a class="text-muted hover:text-accent no-underline" href="#writing">Writing</a>
+<a class="text-muted hover:text-accent no-underline" href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main id="top" class="max-w-5xl mx-auto px-6 pb-10">
+
+<div class="pt-12 md:pt-20 grid md:grid-cols-[auto_1fr] gap-8 md:gap-11 items-center">
+<div role="img" aria-label="Shindo Bajada Amacan" class="w-36 h-36 md:w-48 md:h-48 grid place-items-center font-display font-extrabold text-5xl md:text-6xl text-onaccent bg-gradient-to-br from-accent to-pink shadow-2xl" style="border-radius:44% 56% 52% 48%/52% 44% 56% 48%">SA</div>
+<div>
+<h1 class="font-display font-extrabold text-[clamp(42px,8vw,84px)] leading-none tracking-tighter">Shindo Bajada Amacan</h1>
+<span class="inline-block mt-4 px-4 py-1.5 rounded-full bg-surface border border-line font-medium text-accent">Software Engineer Intern</span>
+<p class="text-xl max-w-[32em] mt-5 mb-7">I’m a 3rd-year BSIT student who turns ideas into clean, friendly software and explains it in plain words anyone can follow.</p>
+<div class="flex flex-wrap gap-3">
+<a class="btn btn-p" href="https://canva.link/achhz38qcyeesqa" download>View Resume</a>
+<a class="btn" href="https://www.linkedin.com/in/shindo-bajada-amacan-94137b447" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/hereshindo" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+</div>
+
+<section id="skills" class="pt-[72px]">
+<h2 class="font-display font-bold text-[clamp(30px,4.5vw,42px)] leading-tight mb-3">Skills</h2>
+<p class="text-muted max-w-xl mb-7">Grouped by how I use each one, from what I do on my own to what I’m still learning.</p>
+<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+<div class="glass p-6"><h3 class="font-display font-bold text-xl mb-3.5">Languages</h3>
+<div class="tier t1"><small>Confident</small><div class="chips"><span class="chip">Java</span><span class="chip">C#</span></div></div>
+<div class="tier t2"><small>Working knowledge</small><div class="chips"><span class="chip">JavaScript</span><span class="chip">Python</span></div></div>
+<div class="tier t3"><small>Learning</small><div class="chips"><span class="chip">C++</span></div></div></div>
+<div class="glass p-6"><h3 class="font-display font-bold text-xl mb-3.5">Frameworks</h3>
+<div class="tier t1"><small>Confident</small><div class="chips"><span class="chip">Tailwind CSS</span></div></div>
+<div class="tier t2"><small>Working knowledge</small><div class="chips"><span class="chip">Django</span></div></div>
+<div class="tier t3"><small>Learning</small><div class="chips"><span class="chip">Django</span></div></div></div>
+<div class="glass p-6"><h3 class="font-display font-bold text-xl mb-3.5">Databases</h3>
+<div class="tier t1"><small>Confident</small><div class="chips"><span class="chip">MySQL</span></div></div>
+<div class="tier t2"><small>Working knowledge</small><div class="chips"><span class="chip">PostgreSQL</span></div></div>
+<div class="tier t3"><small>Learning</small><div class="chips"><span class="chip">PostgreSQL</span></div></div></div>
+<div class="glass p-6"><h3 class="font-display font-bold text-xl mb-3.5">Tools</h3>
+<div class="tier t1"><small>Confident</small><div class="chips"><span class="chip">VS Code</span></div></div>
+<div class="tier t2"><small>Working knowledge</small><div class="chips"><span class="chip">Figma</span></div></div>
+<div class="tier t3"><small>Learning</small><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span></div></div></div>
+</div>
+</section>
+
+<section id="work" class="pt-[72px]">
+<h2 class="font-display font-bold text-[clamp(30px,4.5vw,42px)] leading-tight mb-3">Flagship projects</h2>
+<p class="text-muted max-w-xl mb-7">Two academic projects, explained by the problem they solve and what I did.</p>
+
+<article class="glass p-6 md:p-8 mb-6">
+<h3 class="font-display font-bold text-[clamp(26px,4vw,34px)] leading-tight">Shoe Shop</h3>
+<div class="chips mt-3.5 mb-6"><span class="chip">JavaScript</span><span class="chip">Django</span><span class="chip">HTML</span><span class="chip">Tailwind CSS</span></div>
+<dl class="grid md:grid-cols-[170px_1fr] gap-x-6 gap-y-1 md:gap-y-5 m-0">
+<dt class="dt">The problem</dt><dd class="m-0 mb-3 md:mb-0">Small shoe sellers need an online storefront where customers can browse products easily and feel confident about what they’re choosing.</dd>
+<dt class="dt">Architecture and tech stack</dt><dd class="m-0 mb-3 md:mb-0">Django handles the data and the server logic. HTML and Tailwind CSS build a clean, responsive interface quickly, and JavaScript adds the interactive parts so the shop feels smooth.</dd>
+<dt class="dt">My contributions</dt><dd class="m-0 mb-3 md:mb-0"><ul class="m-0 pl-5 list-disc"><li>Came up with the design idea and look of the shop.</li><li>Coded the front end: pages, layout and interactions.</li></ul></dd>
+<dt class="dt">Results and testing</dt><dd class="m-0">A working shop with a responsive design that adapts to phone and desktop screens, tested in the browser during development.</dd>
+</dl>
+<div class="mt-6 flex flex-wrap gap-3"><a class="btn" href="https://github.com/hereshindo/shoe-shop" target="_blank" rel="noopener">View repository</a><a class="btn" href="https://your-demo-link.example" target="_blank" rel="noopener">Open live demo</a></div>
+</article>
+
+<article class="glass p-6 md:p-8 mb-6">
+<h3 class="font-display font-bold text-[clamp(26px,4vw,34px)] leading-tight">Supermarket Inventory System</h3>
+<div class="chips mt-3.5 mb-6"><span class="chip">Python</span></div>
+<dl class="grid md:grid-cols-[170px_1fr] gap-x-6 gap-y-1 md:gap-y-5 m-0">
+<dt class="dt">The problem</dt><dd class="m-0 mb-3 md:mb-0">Supermarkets need to know what is in stock and what is running low. Tracking it by hand is slow and easy to get wrong.</dd>
+<dt class="dt">Architecture and tech stack</dt><dd class="m-0 mb-3 md:mb-0">Built entirely in Python to keep the system simple, readable and easy to maintain, with no extra tools needed to run it.</dd>
+<dt class="dt">My contributions</dt><dd class="m-0 mb-3 md:mb-0"><ul class="m-0 pl-5 list-disc"><li>Wrote most of the code for the project.</li><li>Built the core inventory features and how they fit together.</li></ul></dd>
+<dt class="dt">Results and testing</dt><dd class="m-0">A working inventory system that keeps stock records in one place, tested by running through typical store tasks.</dd>
+</dl>
+<div class="mt-6 flex flex-wrap gap-3"><a class="btn" href="https://github.com/hereshindo/inventory-system" target="_blank" rel="noopener">View repository</a><a class="btn" href="https://your-demo-link.example" target="_blank" rel="noopener">Open live demo</a></div>
+</article>
+</section>
+
+<section id="writing" class="pt-[72px]">
+<h2 class="font-display font-bold text-[clamp(30px,4.5vw,42px)] leading-tight mb-3">Documentation samples</h2>
+<p class="text-muted max-w-xl mb-7">Technical writing from Business Communication in IT.</p>
+<div class="flex flex-wrap gap-2 mb-4" role="tablist">
+<button class="tabbtn" role="tab" aria-selected="true" aria-controls="p1" id="t1">Developer guide</button>
+<button class="tabbtn" role="tab" aria-selected="false" aria-controls="p2" id="t2">Cover letter</button>
+<button class="tabbtn" role="tab" aria-selected="false" aria-controls="p3" id="t3">Resume</button>
+</div>
+<div class="glass panel p-7" role="tabpanel" id="p1" aria-labelledby="t1">
+<h3>How to run the Shoe Shop locally</h3>
+<p><b>Purpose:</b> Get a new teammate running the project in about 15 minutes.</p>
+<ol class="pl-5 my-3 list-decimal space-y-1.5">
+<li>Install Python and Git.</li>
+<li>Clone the repository: <code>git clone &lt;repo-url&gt;</code></li>
+<li>Install the requirements: <code>pip install -r requirements.txt</code></li>
+<li>Start the server: <code>python manage.py runserver</code></li>
+<li>Open <code>localhost:8000</code> in your browser. You should see the shop’s home page.</li>
+</ol>
+</div>
+<div class="glass panel p-7" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+<h3>Cover letter</h3>
+<p>My application for a Software Engineer Intern role. <a class="text-accent" href="cover-letter.pdf">Read the full letter</a></p>
+</div>
+<div class="glass panel p-7" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+<h3>Shindo B. Amacan</h3>
+<p class="m-0 text-muted">BSIT Student | Software Developer</p>
+<h4>Professional summary</h4>
+<p class="m-0">Third-year BSIT student with knowledge of programming, web development and database management. Interested in software development and creating useful applications. Willing to learn new technologies, improve technical skills and work well with a team.</p>
+<h4>Key skills</h4>
+<ul class="m-0 pl-5 list-disc space-y-1">
+<li><b>Programming:</b> Java, Python, C++, C# and JavaScript.</li>
+<li><b>UI design:</b> website layouts and user interfaces in Figma.</li>
+<li><b>Team collaboration:</b> group programming projects and system presentations.</li>
+<li><b>Basic networking:</b> LAN cabling, RJ45 crimping, network setup, basic router and switch configuration.</li>
+</ul>
+<h4>Work experience</h4>
+<p class="m-0"><b>Work Immersion / OJT Student, DepEd District Office, Panay, Capiz</b> (Jan 2024 – Mar 2024)</p>
+<ul class="m-0 pl-5 list-disc"><li>Crimped Ethernet cables using RJ45 connectors.</li><li>Fixed simple computer hardware and system issues.</li><li>Set up desktop computers and installed required software.</li></ul>
+<h4>Education</h4>
+<p class="m-0"><b>BSIT, Filamer Christian University</b> (2024 – present), 3rd-year student.</p>
+<p class="m-0"><b>ICT, Commissioner Luis R. Asis National High School</b> (Aug 2022 – May 2024).</p>
+<p class="mt-5"><a class="btn btn-p" href="resume.pdf" download>Download the PDF</a></p>
+</div>
+</section>
+
+<section id="contact" class="pt-[72px]">
+<h2 class="font-display font-bold text-[clamp(30px,4.5vw,42px)] leading-tight mb-3">Let’s work together</h2>
+<p class="text-muted max-w-xl mb-7">I’m looking for a software engineering internship. Send a message and I’ll reply within two working days.</p>
+<div class="glass p-6 md:p-9 grid md:grid-cols-[1fr_1.2fr] gap-9">
+<div class="text-muted space-y-3">
+<p class="m-0"><strong class="text-ink">Email</strong><br><a class="text-accent" href="mailto:shindoamacan@gmail.com">shindoamacan@gmail.com</a></p>
+<p class="m-0"><strong class="text-ink">LinkedIn</strong><br><a class="text-accent break-all" href="https://www.linkedin.com/in/shindo-bajada-amacan-94137b447" target="_blank" rel="noopener">linkedin.com/in/shindo-bajada-amacan-94137b447</a></p>
+<p class="m-0"><strong class="text-ink">GitHub</strong><br><a class="text-accent" href="https://github.com/hereshindo" target="_blank" rel="noopener">github.com/hereshindo</a></p>
+<p class="m-0"><strong class="text-ink">Phone</strong><br>09093202202</p>
+<p class="m-0"><strong class="text-ink">Based in</strong><br>Panay, Capiz, Philippines</p>
+</div>
+<form id="cf">
+<label class="block font-medium mb-3.5">Your name<input class="field" name="n" required autocomplete="name"></label>
+<label class="block font-medium mb-3.5">Your email<input class="field" name="e" type="email" required autocomplete="email"></label>
+<label class="block font-medium mb-3.5">Message<textarea class="field" name="m" rows="4" required></textarea></label>
+<button class="btn btn-p cursor-pointer" type="submit">Send message</button>
+</form>
+</div>
+</section>
+
+<footer class="text-center text-muted text-sm pt-12 pb-6">© 2026 Shindo Bajada Amacan</footer>
+</main>
+<script>
+(function(){
+var tabs=document.querySelectorAll('[role=tab]');
+tabs.forEach(function(t){t.addEventListener('click',function(){
+tabs.forEach(function(x){x.setAttribute('aria-selected',x===t);document.getElementById(x.getAttribute('aria-controls')).hidden=x!==t;});
+});});
+document.getElementById('cf').addEventListener('submit',function(ev){
+ev.preventDefault();var f=ev.target;
+var body=encodeURIComponent(f.m.value+'\n\n– '+f.n.value+' ('+f.e.value+')');
+location.href='mailto:shindoamacan@gmail.com?subject='+encodeURIComponent('Portfolio message from '+f.n.value)+'&body='+body;
+});
+})();
+</script>
+</body>
+</html>
